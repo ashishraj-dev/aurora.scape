@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          src="assets/Aurora-Scape-v5.png"
+          alt="Aurora Scape Logo"
+          class="logo"
+        />
+      </a>
+
+      <!-- <nav class="nav-links">
+        <a href="index.html"> <ion-icon name="return-down-back-outline"></ion-icon> &nbsp; Back To Home</a>
+      </nav> -->
+      <span class="span-plan">
+        <button
+          class="plan-btn form-back-btn"
+          onclick="location.href='/index.html'"
+        >
+          <ion-icon name="return-down-back-outline" class="back-btn"></ion-icon>
+          Back To Home
+        </button>
+      </span>
+    </header>
+    <h1 class="planning-heading">Happy Planning ✈️</h1>
+    <div class="form-container">
+      <form>
+        <div class="form-group">
+          <label for="name">Name*</label>
+          <input type="text" id="name" />
+        </div>
+        <div class="form-group">
+          <label for="father-name">Father Name*</label>
+          <input type="text" id="father-name" required />
+        </div>
+        <div class="form-group">
+          <label for="mobile">Mobile No.*</label>
+          <input type="tel" id="mobile" required />
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+        </div>
+        <div class="form-group">
+          <label for="state">State</label>
+          <select id="state">
+            <option value="">Select State</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="city">City</label>
+          <select id="city">
+            <option value="">Select City</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <textarea id="address" rows="3"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/113d3bf2a9.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

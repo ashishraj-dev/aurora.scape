@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurora Scape - Northern Lights Guide</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <a class="scrollTop" href="#"
+      ><button>
+        <ion-icon
+          name="arrow-up-outline"
+          class="scrollTop-btn"
+        ></ion-icon></button
+    ></a>
+    <div class="wrapper">
+      <div class="item item-1">
+        Experience the magic of the Northern Lights - Plan your aurora tour
+        today!
+        <a class="plan-now" href="form.html">Plan Now</a>
+      </div>
+      <div aria-hidden="true" class="item item-2">
+        Experience the magic of the Northern Lights - Plan your aurora tour
+        today!
+        <a class="plan-now" href="form.html">Plan Now</a>
+      </div>
+      <div aria-hidden="true" class="item item-2">
+        Experience the magic of the Northern Lights - Plan your aurora tour
+        today!
+        <a class="plan-now" href="form.html">Plan Now</a>
+      </div>
+    </div>
+    <button class="btn-mobile-nav">
+      <ion-icon name="menu-outline" class="icon-mobile-nav"></ion-icon>
+      <ion-icon name="close-outline" class="icon-mobile-nav"></ion-icon>
+    </button>
+    <header>
+      <a href="#">
+        <img
+          src="assets/Aurora-Scape-v5.png"
+          alt="Aurora Watch Logo"
+          class="logo"
+        />
+      </a>
+
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#news-section-container">Aurora News</a>
+        <a href="#experience">Experience</a>
+        <a href="#photography">Photography</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <span class="span-plan">
+        <button class="plan-btn" onclick="location.href='/form.html'">
+          Plan Your Trip
+        </button>
+      </span>
+    </header>
+
+    <div class="slider-container">
+      <div class="slides">
+        <div class="slide">
+          <img
+            src="assets/aurora-1.jpg"
+            alt="Spectacular aurora over snowy landscape"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="assets/aurora-2.jpg"
+            alt="Green aurora dancing in night sky"
+          />
+        </div>
+        <div class="slide">
+          <img src="assets/finland.jpg" alt="Aurora reflection in lake" />
+        </div>
+        <div class="slide">
+          <img src="assets/aurora-6-1.jpg" alt="Aurora reflection in lake" />
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="btn-left btns" onclick="prevSlide()">&lt;</button>
+        <button class="btn-right btns" onclick="nextSlide()">&gt;</button>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="grid">
+        <div class="card">
+          <div class="img-wrapper">
+            <img src="assets/aurora-3.jpg" alt="aurora-science" />
+          </div>
+          <h3>Scientific Wonder</h3>
+          <p>
+            The Aurora Borealis occurs when charged particles from the sun
+            collide with gases in Earth's atmosphere, creating a mesmerizing
+            display of dancing lights in the polar regions.
+          </p>
+
+          <button class="btn-card btns">&rarr; Learn More</button>
+        </div>
+        <div class="card">
+          <div class="img-wrapper">
+            <img src="assets/aurora-5.jpg" alt="aurora-culture" />
+          </div>
+          <h3>Cultural Significance</h3>
+          <p>
+            For centuries, the Northern Lights have inspired myths and legends
+            across cultures, from Norse mythology to Indigenous traditions of
+            the Arctic regions.
+          </p>
+          <button class="btn-card btns">&rarr; Learn More</button>
+        </div>
+        <div class="card">
+          <div class="img-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7"
+              alt="aurora-viewing"
+            />
+          </div>
+          <h3>Best Viewing Locations</h3>
+          <p>
+            The "Aurora Belt" includes prime viewing locations like Iceland,
+            Norway, Finland, and parts of Canada, offering spectacular views of
+            this natural phenomenon.
+          </p>
+          <button class="btn-card btns">&rarr; Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="news-section-wrapper" id="news-section-container">
+      <div class="line" id="aurora-news">
+        <span>Latest Aurora News</span>
+      </div>
+
+      <section class="news-section">
+        <div class="grid">
+          <div class="card-2">
+            <a
+              class="news-links"
+              href="https://www.newsweek.com/northern-lights-us-g2-geomagnetic-storm-coronal-mass-ejection-1938704"
+              target="_blank"
+            >
+              <img
+                src="https://d.newsweek.com/en/full/2449142/northern-lights-tonight.webp?w=790&f=68bfeae278540fc080ddaa0b314cf16c"
+                alt="aurora forecast"
+              />
+              <div class="img-description">
+                <p class="card-2-para">
+                  Tonight's Aurora Forecast: Northern Lights to Continue Over US
+                </p>
+              </div>
+            </a>
+
+            <hr />
+            <p class="posted">
+              <i class="fa-regular fa-clock"></i> August 13, 2024
+            </p>
+          </div>
+          <div class="card-2">
+            <a
+              href="https://www.davemorrowphotography.com/2014/10/how-to-photograph-northern-lights.html"
+              class="news-links"
+              target="_blank"
+            >
+              <img
+                src="https://www.davemorrowphotography.com/wp-content/uploads/2021/01/northern-lights-photography-1.jpg"
+                alt="aurora photography"
+              />
+              <div class="img-description">
+                <p class="card-2-para">
+                  Northern Lights Photography – The Ultimate Guide [2025]
+                </p>
+              </div>
+            </a>
+
+            <hr />
+            <p class="posted">
+              <i class="fa-regular fa-clock"></i> January 01, 2025
+            </p>
+          </div>
+          <div class="card-2">
+            <a
+              href="https://www.icelandia.com/inspiration/the-best-time-to-see-the-northern-lights-in-iceland"
+              class="news-links"
+              target="_blank"
+            >
+              <img
+                src="https://cdn.sanity.io/images/lf2d8f6r/production/194e604e7581669452724007be4f033f49c6c95b-3674x2454.jpg?rect=0%2C252%2C3674%2C2202&q=75&fit=max&auto=format&w=1920"
+                alt="aurora tourism"
+              />
+              <div class="img-description">
+                <p class="card-2-para">
+                  The Best Time To See The Northern Lights In Iceland.
+                </p>
+              </div>
+            </a>
+
+            <hr />
+            <p class="posted">
+              <i class="fa-regular fa-clock"></i> March 5, 2024
+            </p>
+          </div>
+        </div>
+        <div class="button-container">
+          <button class="more-news btns">
+            <i class="fa-regular fa-circle-pause"></i> Read More News
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <div class="line line-2">
+      <span>Regional Updates</span>
+    </div>
+
+    <section class="news-section">
+      <div class="grid">
+        <div class="card-2">
+          <a
+            href="https://www.forbes.com/sites/jamiecartereurope/2024/12/24/northern-lights-may-be-visible-christmas-eve-and-christmas-day---what-to-know/"
+            class="news-links"
+            target="_blank"
+          >
+            <img
+              src="https://imageio.forbes.com/specials-images/imageserve/635842288/A-superb-display-of-aurora-borealis-seen-on-March-14/960x0.jpg?format=jpg&width=1440"
+              alt="u.s aurora"
+            />
+            <div class="img-description">
+              <p class="card-2-para">
+                Updated Northern Lights Alert For Christmas Day: These U.S.
+                States May See Aurora
+              </p>
+            </div>
+          </a>
+
+          <hr />
+          <p class="posted">
+            <i class="fa-regular fa-clock"></i> March 12, 2024
+          </p>
+        </div>
+        <div class="card-2">
+          <a
+            href="https://www.hindustantimes.com/india-news/auroras-sighted-in-leh-how-a-solar-storm-led-to-this-rare-phenomena-101728691053474.html"
+            class="news-links"
+            target="_blank"
+          >
+            <img
+              src="https://www.hindustantimes.com/ht-img/img/2024/10/12/550x309/aurora_1728693121945_1728693131447.jpg"
+              alt="leh aurora"
+            />
+            <div class="img-description">
+              <p class="card-2-para">
+                Auroras sighted in Leh: How a solar storm led to this rare
+                phenomena
+              </p>
+            </div>
+          </a>
+
+          <hr />
+          <p class="posted">
+            <i class="fa-regular fa-clock"></i> March 8, 2024
+          </p>
+        </div>
+        <div class="card-2">
+          <a
+            href="https://uk.news.yahoo.com/met-office-predicts-powerful-northern-070108530.html?guccounter=1"
+            class="news-links"
+            target="_blank"
+          >
+            <img
+              src="https://s.yimg.com/ny/api/res/1.2/lP7XgbSMZflbkAlsBTKHCQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTI0MDA7aD0xNjAwO2NmPXdlYnA-/https://media.zenfs.com/en/the_independent_577/7c82ae4b729a9110d489a9b28095ef9d"
+              alt="uk aurora"
+            />
+            <div class="img-description">
+              <p class="card-2-para">
+                Dazzling Northern Lights display could light up UK skies on
+                Valentine’s Day
+              </p>
+            </div>
+          </a>
+
+          <hr />
+          <p class="posted">
+            <i class="fa-regular fa-clock"></i> February 14, 2025
+          </p>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="more-news btns">
+          <i class="fa-regular fa-circle-pause"></i> Read More News
+        </button>
+      </div>
+    </section>
+
+    <article class="main-article" id="experience">
+      <div class="article-container">
+        <div class="article-desc">
+          <h1>The Magic of Aurora Borealis</h1>
+          <br />
+          <p>
+            The Aurora Borealis, also known as the Northern Lights, is one of
+            nature's most spectacular displays. This ethereal phenomenon occurs
+            when charged particles from the sun interact with gases in Earth's
+            atmosphere, creating curtains of light that dance across the night
+            sky in brilliant hues of green, pink, and sometimes even purple.
+          </p>
+          <br />
+          <p>
+            Throughout history, these celestial lights have captured human
+            imagination, inspiring countless myths and legends. Ancient Norse
+            people believed the lights were reflections from Valkyrie armor as
+            they led fallen warriors to Valhalla, while some Indigenous cultures
+            saw them as spirits of their ancestors dancing in the sky.
+          </p>
+          <br />
+          <p>
+            Today, the Aurora Borealis continues to captivate scientists and
+            travelers alike, drawing people from around the world to the Arctic
+            Circle in hopes of witnessing this magnificent natural light show.
+            Modern technology allows us to predict aurora activity and
+            understand its patterns, yet the experience of seeing the lights
+            dance across the night sky remains as magical as ever.
+          </p>
+        </div>
+        <!-- <div class="article-img">
+          <img
+            src="https://images.unsplash.com/photo-1534294228306-bd54eb9a7ba8"
+            alt="aurora-borealis"
+          />
+        </div> -->
+      </div>
+    </article>
+
+    <div class="grid-container" id="photography">
+      <div class="grid-card wide">
+        <a href="#">
+          <div class="img-wrapper-2">
+            <img src="assets/iceland.jpg" alt="Iceland Aurora" />
+          </div>
+          <h3>Iceland</h3>
+        </a>
+      </div>
+      <div class="grid-card big">
+        <a href="#">
+          <div class="img-wrapper-2">
+            <img src="assets/greenland.jpg" alt="Greenland Aurora" />
+          </div>
+          <h3>Greenland</h3>
+        </a>
+      </div>
+      <div class="grid-card wide">
+        <a href="#">
+          <div class="img-wrapper-2">
+            <img src="assets/finland.jpg" alt="Finland Aurora" />
+          </div>
+          <h3>Finland</h3>
+        </a>
+      </div>
+      <div class="grid-card wide">
+        <a href="#">
+          <div class="img-wrapper-2">
+            <img src="assets/alaska.jpg" alt="Alaska Aurora" />
+          </div>
+          <h3>Alaska</h3>
+        </a>
+      </div>
+      <div class="grid-card big tall .b-wide">
+        <a href="#">
+          <div class="img-wrapper-2">
+            <img src="assets/canada.jpg" alt="Canada Aurora" />
+          </div>
+          <h3>Canada</h3>
+        </a>
+      </div>
+
+      <div class="grid-card b-wide">
+        <a href="#">
+          <div class="img-wrapper-2">
+            <img src="assets/norway.jpg" alt="Norway Aurora" />
+          </div>
+          <h3>Norway</h3>
+        </a>
+      </div>
+    </div>
+
+    <footer class="footer" id="contact">
+      <div class="column-1 office">
+        <h2>Our Offices</h2>
+        <br />
+        <h3>Headquarters</h3>
+        <p>Lorem ipsum, India</p>
+        <br />
+        <h3>Regional Offices</h3>
+        <p>Lorem ipsum, India</p>
+        <br />
+        <h3>Viewing Centers</h3>
+        <p>India</p>
+      </div>
+      <div class="column-1">
+        <h2>Contact Us</h2>
+        <br />
+        <h3>Phone</h3>
+        <p>+91 9999999999</p>
+        <br />
+        <h3>Email</h3>
+        <p>demo@aurorascape.com</p>
+        <br />
+      </div>
+      <div class="column-1">
+        <h2>Viewing Locations</h2>
+        <br />
+        <div class="places">
+          <ul>
+            <li><a href="#">Reykjavik</a></li>
+            <li><a href="#">Tromsø</a></li>
+            <li><a href="#">Rovaniemi</a></li>
+            <li><a href="#">Fairbanks</a></li>
+            <li><a href="#">Yellowknife</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Murmansk</a></li>
+            <li><a href="#">Inari</a></li>
+            <li><a href="#">Jokkmokk</a></li>
+            <li><a href="#">Churchill</a></li>
+            <li><a href="#">Nuuk</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="column-1 social-media">
+        <h2>Social Media</h2>
+        <br />
+        <div class="social-links">
+          <span
+            ><a href="#"><i class="fab fa-facebook"></i></a
+          ></span>
+          <span
+            ><a href="#"><i class="fab fa-instagram"></i></a
+          ></span>
+          <span
+            ><a href="#"><i class="fab fa-twitter"></i></a
+          ></span>
+          <span
+            ><a href="#"><i class="fab fa-youtube"></i></a
+          ></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/113d3bf2a9.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
