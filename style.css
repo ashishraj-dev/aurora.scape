@@ -33,12 +33,12 @@ body {
   z-index: 4000;
 }
 
-.plan-btn .back-btn[name="return-down-back-outline"] {
+.plan-btn .back-btn[name='return-down-back-outline'] {
   /* position: absolute;
 left: 0;
 top: 13px; */
-transform: translateY(2px);
-padding-right: 2px;
+  transform: translateY(2px);
+  padding-right: 2px;
 }
 
 .icon-mobile-nav {
@@ -342,12 +342,12 @@ header {
 
 /* Marquee Effect ends... */
 
-.plan-now {
+.book-now {
   color: white;
   text-decoration: none;
 }
 
-.plan-now:hover {
+.book-now:hover {
   text-decoration: underline;
 }
 
@@ -586,22 +586,21 @@ header {
   height: 100%;
 }
 
-.news-section a:link{
+.news-section a:link {
   color: #0077cc;
 }
 
-.news-section a:visited{
+.news-section a:visited {
   color: #551a8b;
 }
 
-.news-section a:hover{
+.news-section a:hover {
   color: #ff6600;
 }
 
-.news-section a:active{
+.news-section a:active {
   color: #cc0000;
 }
-
 
 .card-2 img {
   width: 100%;
@@ -902,7 +901,7 @@ header {
   color: white;
 }
 
-.planning-heading {
+.booking-heading {
   text-align: center;
   margin-top: 10px;
 }
