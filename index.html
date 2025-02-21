@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aurora Scape - Northern Lights Guide</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -15,8 +16,8 @@
     ></script>
   </head>
   <body>
-    <a class="scrollTop" href="#"
-      ><button>
+    <a class="scrollTop" href="#" 
+      ><button class="ripple">
         <ion-icon
           name="arrow-up-outline"
           class="scrollTop-btn"
@@ -153,7 +154,7 @@
 
       <section class="news-section">
         <div class="grid">
-          <div class="card-2">
+          <div class="card-2" data-aos="flip-up" data-aos-duration="500">
             <a
               class="news-links"
               href="https://www.newsweek.com/northern-lights-us-g2-geomagnetic-storm-coronal-mass-ejection-1938704"
@@ -175,7 +176,7 @@
               <i class="fa-regular fa-clock"></i> August 13, 2024
             </p>
           </div>
-          <div class="card-2">
+          <div class="card-2" data-aos="flip-left" data-aos-duration="500">
             <a
               href="https://www.davemorrowphotography.com/2014/10/how-to-photograph-northern-lights.html"
               class="news-links"
@@ -197,7 +198,7 @@
               <i class="fa-regular fa-clock"></i> January 01, 2025
             </p>
           </div>
-          <div class="card-2">
+          <div class="card-2" data-aos="flip-down" data-aos-duration="500">
             <a
               href="https://www.icelandia.com/inspiration/the-best-time-to-see-the-northern-lights-in-iceland"
               class="news-links"
@@ -234,7 +235,7 @@
 
     <section class="news-section">
       <div class="grid">
-        <div class="card-2">
+        <div class="card-2" data-aos="fade-right" data-aos-duration="1000">
           <a
             href="https://www.forbes.com/sites/jamiecartereurope/2024/12/24/northern-lights-may-be-visible-christmas-eve-and-christmas-day---what-to-know/"
             class="news-links"
@@ -257,7 +258,7 @@
             <i class="fa-regular fa-clock"></i> March 12, 2024
           </p>
         </div>
-        <div class="card-2">
+        <div class="card-2" data-aos="fade-right" data-aos-duration="1000">
           <a
             href="https://www.hindustantimes.com/india-news/auroras-sighted-in-leh-how-a-solar-storm-led-to-this-rare-phenomena-101728691053474.html"
             class="news-links"
@@ -280,7 +281,7 @@
             <i class="fa-regular fa-clock"></i> March 8, 2024
           </p>
         </div>
-        <div class="card-2">
+        <div class="card-2" data-aos="fade-right" data-aos-duration="1000">
           <a
             href="https://uk.news.yahoo.com/met-office-predicts-powerful-northern-070108530.html?guccounter=1"
             class="news-links"
@@ -352,37 +353,49 @@
 
     <div class="grid-container" id="photography">
       <div class="grid-card wide">
-        <div class="img-wrapper-2">
+        <div
+          class="img-wrapper-2"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
           <img src="assets/iceland.jpg" alt="Iceland Aurora" />
         </div>
         <h3>Iceland</h3>
       </div>
-      <div class="grid-card big">
+      <div class="grid-card big" data-aos="fade-up" data-aos-duration="1000">
         <div class="img-wrapper-2">
           <img src="assets/greenland.jpg" alt="Greenland Aurora" />
         </div>
         <h3>Greenland</h3>
       </div>
-      <div class="grid-card wide">
+      <div
+        class="grid-card wide"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
         <div class="img-wrapper-2">
           <img src="assets/finland.jpg" alt="Finland Aurora" />
         </div>
         <h3>Finland</h3>
       </div>
-      <div class="grid-card wide">
+      <div class="grid-card wide" data-aos="fade-top" data-aos-duration="1000">
         <div class="img-wrapper-2">
           <img src="assets/alaska.jpg" alt="Alaska Aurora" />
         </div>
         <h3>Alaska</h3>
       </div>
-      <div class="grid-card big tall .b-wide">
+      <div
+        class="grid-card big tall .b-wide"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
         <div class="img-wrapper-2">
           <img src="assets/canada.jpg" alt="Canada Aurora" />
         </div>
         <h3>Canada</h3>
       </div>
 
-      <div class="grid-card b-wide">
+      <div class="grid-card b-wide" data-aos="fade-up" data-aos-duration="1000">
         <div class="img-wrapper-2">
           <img src="assets/norway.jpg" alt="Norway Aurora" />
         </div>
@@ -452,11 +465,14 @@
         </div>
       </div>
     </footer>
-
-    <script src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/113d3bf2a9.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script.js"></script>
   </body>
 </html>

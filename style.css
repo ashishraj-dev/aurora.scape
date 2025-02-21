@@ -972,3 +972,31 @@ textarea {
 .show-scrollTop {
   display: block;
 }
+
+
+/* Ripple effect Scroll Top Button */
+
+.ripple {
+  background-color: #000000;
+  border-radius: 50%;
+  animation: ripple 1.2s linear infinite;
+}
+
+.ripple::before {
+  content: "";
+  grid-area: 1/1;
+  border-radius: 50%;
+}
+
+.ripple.anim-paused {
+  animation-play-state: paused;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 .7rem rgba(0, 0, 0, 0.697);
+  }
+  100% {
+    box-shadow: 0 0 0 1.6rem rgba(0, 0, 0, 0);
+  }
+}
