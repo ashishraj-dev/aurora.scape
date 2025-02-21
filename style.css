@@ -216,6 +216,10 @@ header {
   header .plan-btn {
     margin-right: 0;
   }
+
+  body .wrapper {
+    --gap: 30px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -974,11 +978,10 @@ textarea {
 }
 
 .form-header {
-  -webkit-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.75);
 }
-
 
 /* Ripple effect Scroll Top Button */
 .ripple {
@@ -988,7 +991,7 @@ box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
 }
 
 .ripple::before {
-  content: "";
+  content: '';
   grid-area: 1/1;
   border-radius: 50%;
 }
@@ -999,7 +1002,7 @@ box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
 
 @keyframes ripple {
   0% {
-    box-shadow: 0 0 0 .7rem rgba(0, 0, 0, 0.697);
+    box-shadow: 0 0 0 0.7rem rgba(0, 0, 0, 0.697);
   }
   100% {
     box-shadow: 0 0 0 1.6rem rgba(0, 0, 0, 0);
