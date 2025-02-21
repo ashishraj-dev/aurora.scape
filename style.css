@@ -973,9 +973,14 @@ textarea {
   display: block;
 }
 
+.form-header {
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+}
+
 
 /* Ripple effect Scroll Top Button */
-
 .ripple {
   background-color: #000000;
   border-radius: 50%;
