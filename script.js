@@ -153,12 +153,12 @@ document.addEventListener('DOMContentLoaded', function () {
   // Scroll effect for header
   window.addEventListener('scroll', function () {
     // const logo = document.querySelector(".logo");
-    if (window.scrollY > totalHeight) {
+    if (window.scrollY > wrapperHeight) {
       header.style.background = '#fff';
       header.style.position = 'fixed';
       header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
       mobileNav.style.position = 'fixed';
-      mobileNav.style.top = '15px';
+      mobileNav.style.top = '12px';
       closeIcon.style.top = '15px';
       scrollTopBtn.classList.add('show-scrollTop');
       // logo.style.width = "100px";
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function () {
       header.style.boxShadow = 'none';
       header.style.position = 'relative';
       mobileNav.style.position = 'absolute';
-      mobileNav.style.top = '15px';
+      mobileNav.style.top = '12px';
       closeIcon.style.top = '65px';
       scrollTopBtn.classList.remove('show-scrollTop');
       // logo.style.width = "150px";
