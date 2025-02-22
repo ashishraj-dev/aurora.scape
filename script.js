@@ -252,7 +252,11 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     btnsOpenModal.forEach(modalEl => {
-      modalEl.addEventListener('click', openModal);
+      modalEl.addEventListener('click', function () {
+        setTimeout(() => {
+          openModal();
+        }, 300);
+      });
     });
 
     btnsCloseModal.addEventListener('click', closeModal);
