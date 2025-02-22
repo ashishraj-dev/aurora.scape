@@ -42,34 +42,6 @@ let interval;
 const slides = document.querySelector('.slides');
 const totalSlides = document.querySelectorAll('.slide').length;
 const sliderContainer = document.querySelector('.slider-container');
-const btnsOpenModal = document.querySelectorAll('.open-modal');
-const overlay = document.querySelector('.modal-overlay');
-const modalBox = document.querySelector('.modal');
-const btnsCloseModal = document.querySelector('.close-btn');
-
-const openModal = function () {
-  modalBox.classList.remove('hidden');
-  overlay.classList.remove('hidden');
-};
-
-const closeModal = function () {
-  modalBox.classList.add('hidden');
-  overlay.classList.add('hidden');
-};
-
-btnsOpenModal.forEach(modalEl => {
-  modalEl.addEventListener('click', openModal);
-});
-
-btnsCloseModal.addEventListener('click', closeModal);
-
-overlay.addEventListener('click', closeModal);
-
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Escape' && !modalBox.classList.contains('hidden')) {
-    closeModal();
-  }
-});
 
 function showSlide() {
   slides.style.transform = `translateX(-${index * 100}%)`;
@@ -262,4 +234,35 @@ document.addEventListener('DOMContentLoaded', function () {
   startSlideShow();
   sliderContainer.addEventListener('mouseover', stopSlideShow);
   sliderContainer.addEventListener('mouseleave', startSlideShow);
+
+  const btnsOpenModal = document.querySelectorAll('.open-modal');
+  const overlay = document.querySelector('.modal-overlay');
+  const modalBox = document.querySelector('.modal');
+  const btnsCloseModal = document.querySelector('.close-btn');
+
+  if (modalBox && overlay && btnsOpenModal && btnsCloseModal) {
+    const openModal = function () {
+      modalBox.classList.remove('hidden');
+      overlay.classList.remove('hidden');
+    };
+
+    const closeModal = function () {
+      modalBox.classList.add('hidden');
+      overlay.classList.add('hidden');
+    };
+
+    btnsOpenModal.forEach(modalEl => {
+      modalEl.addEventListener('click', openModal);
+    });
+
+    btnsCloseModal.addEventListener('click', closeModal);
+
+    overlay.addEventListener('click', closeModal);
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !modalBox.classList.contains('hidden')) {
+        closeModal();
+      }
+    });
+  }
 });
