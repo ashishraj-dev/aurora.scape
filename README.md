@@ -60,7 +60,7 @@ This project demonstrates my skills in creating responsive and visually engaging
 - Handling form validation and user interactions
 - Using third-party libraries effectively
 
-**Future Improvements**
+**Future Improvements:**
 - Backend integration for form submission
 - Enhanced image optimization
 - Additional interactive features
