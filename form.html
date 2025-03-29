@@ -39,22 +39,23 @@
     </header>
     <h1 class="booking-heading">Booking Form Demo ✈️</h1>
     <div class="form-container">
-      <form>
+      <!-- <form action="http://localhost/" method="post"> -->
+      <form action="">
         <div class="form-group">
           <label for="name">Name*</label>
-          <input type="text" id="name" />
+          <input type="text" id="name" name="name" />
         </div>
         <div class="form-group">
           <label for="father-name">Father Name*</label>
-          <input type="text" id="father-name" required />
+          <input type="text" id="father-name" name="father-name" required />
         </div>
         <div class="form-group">
           <label for="mobile">Mobile No.*</label>
-          <input type="tel" id="mobile" required />
+          <input type="tel" id="mobile" name="mobile-no" required />
         </div>
         <div class="form-group">
           <label for="gender">Gender</label>
-          <select id="gender">
+          <select id="gender" name="gender">
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="other">Other</option>
@@ -62,27 +63,31 @@
         </div>
         <div class="form-group">
           <label for="dob">Date of Birth</label>
-          <input type="date" id="dob" />
+          <input type="date" id="dob" name="dob" />
         </div>
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" />
+          <input type="email" id="email" name="email" />
         </div>
         <div class="form-group">
           <label for="state">State</label>
-          <select id="state">
+          <select id="state" name="state">
             <option value="">Select State</option>
+            <option>Mumbai</option>
+            <option>Bihar</option>
           </select>
         </div>
         <div class="form-group">
           <label for="city">City</label>
-          <select id="city">
+          <select id="city" name="city">
             <option value="">Select City</option>
+            <option>Noida</option>
+            <option>Patna</option>
           </select>
         </div>
         <div class="form-group">
           <label for="address">Address</label>
-          <textarea id="address" rows="3"></textarea>
+          <textarea id="address" rows="3" name="address"></textarea>
         </div>
         <button type="submit" class="submit-btn">Submit</button>
       </form>

@@ -175,10 +175,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  if (window.scrollY > wrapperHeight) {
-    scrollTopBtn.classList.add('show-scrollTop');
-  }
-
   // Scroll effect for header
   window.addEventListener('scroll', function () {
     // const logo = document.querySelector(".logo");
