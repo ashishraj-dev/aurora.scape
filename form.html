@@ -37,61 +37,103 @@
         </button>
       </span>
     </header>
-    <h1 class="booking-heading">Booking Form Demo ✈️</h1>
-    <div class="form-container">
-      <!-- <form action="http://localhost/" method="post"> -->
-      <form action="">
-        <div class="form-group">
-          <label for="name">Name*</label>
-          <input type="text" id="name" name="name" />
+    <main class="form-main">
+      <h1 class="booking-heading">Booking Form Demo ✈️</h1>
+      <div class="form-container">
+        <!-- <form action="http://localhost/" method="post"> -->
+        <div class="form-heading">
+          <h3>Book Your Trip</h3>
+          <p>Ready to Fly? Fill the Form Below!</p>
         </div>
-        <div class="form-group">
-          <label for="father-name">Father Name*</label>
-          <input type="text" id="father-name" name="father-name" required />
-        </div>
-        <div class="form-group">
-          <label for="mobile">Mobile No.*</label>
-          <input type="tel" id="mobile" name="mobile-no" required />
-        </div>
-        <div class="form-group">
-          <label for="gender">Gender</label>
-          <select id="gender" name="gender">
+
+        <form action="">
+          <div class="first-fill">
+            <div class="form-group first-1">
+              <!-- <label for="name">Name</label> -->
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="FullName"
+              />
+            </div>
+            <div class="form-group first-2">
+              <!-- <label for="father-name">Father Name</label> -->
+              <input
+                type="text"
+                id="father-name"
+                name="father-name"
+                required
+                placeholder="Father's Name"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" />
+          </div>
+
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <!-- <select id="gender" name="gender">
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="other">Other</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="dob">Date of Birth</label>
-          <input type="date" id="dob" name="dob" />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" />
-        </div>
-        <div class="form-group">
-          <label for="state">State</label>
-          <select id="state" name="state">
-            <option value="">Select State</option>
-            <option>Mumbai</option>
-            <option>Bihar</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="city">City</label>
-          <select id="city" name="city">
-            <option value="">Select City</option>
-            <option>Noida</option>
-            <option>Patna</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="address">Address</label>
-          <textarea id="address" rows="3" name="address"></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Submit</button>
-      </form>
-    </div>
+          </select> -->
+            <div class="gender-box">
+              <span class="box-1">
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="sex" />
+              </span>
+              <span class="box-1">
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="sex" />
+              </span>
+              <span class="box-1">
+                <label for="custom">Others</label>
+                <input type="radio" id="custom" name="sex" />
+              </span>
+            </div>
+          </div>
+
+          <!-- <div class="form-group">
+          <label for="mobile">Mobile No.</label>
+          <input type="tel" id="mobile" name="mobile-no" required />
+        </div> -->
+          <div class="form-group">
+            <!-- <label for="email">Email</label> -->
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Mobile Number or Email Address"
+            />
+          </div>
+          <div class="form-group">
+            <label for="state">State</label>
+            <select id="state" name="state">
+              <option value="">Select State</option>
+              <option>Mumbai</option>
+              <option>Bihar</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <select id="city" name="city">
+              <option value="">Select City</option>
+              <option>Noida</option>
+              <option>Patna</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <textarea id="address" rows="3" name="address"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </main>
     <script src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/113d3bf2a9.js"

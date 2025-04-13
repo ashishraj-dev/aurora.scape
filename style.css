@@ -905,18 +905,77 @@ header {
 
 .booking-heading {
   text-align: center;
-  margin-top: 10px;
+  /* margin-top: 10px; */
+  padding-top: 10px;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .form-container {
-  margin-top: 10px;
+  margin: auto;
   background: white;
-  padding: 30px;
+  padding: 10px 30px 30px 30px;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  width: 40%;
   text-align: center;
 }
+
+.first-fill {
+  display: flex;
+  /* flex-grow: 1; */
+  gap: 20px;
+  justify-content: space-between;
+  /* flex-wrap: nowrap; */
+}
+
+.form-heading {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.gender-box {
+  border: 2ps solid red;
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* border: 1px solid rgba(84, 84, 84, 0.551); */
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.box-1 {
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding: 5px;
+  display: flex;
+  width: 300px;
+  /* display: inline-block; */
+}
+
+input[type='radio'] {
+  border: 0px;
+  width: 100%;
+  height: 1em;
+  justify-content: center;
+  margin: auto;
+}
+
+.box-1 label {
+  margin: auto;
+}
+
+.first-1 {
+  width: 50%;
+}
+
+.first-2 {
+  width: 50%;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
@@ -935,18 +994,18 @@ textarea {
   border-radius: 4px;
 }
 .submit-btn {
-  width: 100%;
+  width: 150px;
   padding: 10px;
-  background: #007bff;
+  background: #00d766;
   border: none;
   color: white;
-  font-size: 16px;
+  font-size: 25px;
   cursor: pointer;
   border-radius: 4px;
 }
 
 .submit-btn:hover {
-  background: #0056b3;
+  background: #000000;
 }
 
 /* Scroll To Top Btn */
@@ -1035,7 +1094,6 @@ textarea {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   z-index: 9999;
   background-color: #ffffff;
-  
 }
 
 .hidden {
@@ -1079,4 +1137,28 @@ textarea {
   background-color: lightcoral;
   color: white;
   margin-top: 20px;
+}
+
+@media (max-width: 866px) {
+  .form-container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 450px) {
+  .form-container {
+    width: 90%;
+  }
+}
+
+.form-main {
+  /* background-color: #f0f2f5; */
+  background-image: url('/assets/aurora-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  /* height: 100vh; */
+  width: 100%;
+  padding-bottom: 50px;
 }
